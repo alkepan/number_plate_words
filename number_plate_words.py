@@ -11,7 +11,7 @@ wordListNew.sort()
 fiveLetterList = []
 
 for word in wordListNew:
-    if len(word) == 5:
+    if len(word) == 5 and word[0] != "-" and word[0] != "'":
         word = word.upper()
         fiveLetterList.append(word)
 
